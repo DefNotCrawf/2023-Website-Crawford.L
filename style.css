@@ -30,7 +30,7 @@ DIV {
 #FooterLeft {
 	float: left;
 	width: 399px;
-	height: 49px;
+	height: 48px;
 	border: 1px solid green;
 }
 
@@ -38,6 +38,6 @@ DIV {
 #FooterRight {
 	float: right;
 	width: 399px; 
-	height: 49px;
+	height: 48px;
 	border: 1px solid red;
 }
