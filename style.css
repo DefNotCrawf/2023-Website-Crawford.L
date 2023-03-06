@@ -2,6 +2,7 @@ DIV {
 	border: 1px solid #000000;
 }
 
+
 #Header {
 	height: 100px;
 	width: 800px;
@@ -10,11 +11,13 @@ DIV {
 	background: url(images/banner.png) no-repeat;
 }
 
+
 #MainContent {
 	width: 800px;
 	margin-right: auto;
 	margin-left: auto;
 }
+
 
 #Footer {
 	width: 802px;
@@ -23,12 +26,14 @@ DIV {
 	height: 50px
 }
 
+
 #FooterLeft {
 	float: left;
 	width: 399px;
 	height: 48px;
 	border: 1px solid green;
 }
+
 
 #FooterRight {
 	float: right;
