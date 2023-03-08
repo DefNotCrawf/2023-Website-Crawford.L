@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+Body {
+	font-family: 'Dosis', sans-serif;
+}
+
 DIV {
 	border: 1px solid #000000;
 }
@@ -26,13 +32,13 @@ DIV {
 #FooterLeft {
 	float: left;
 	width: 399px;
-	height: 49px;
+	height: 50px;
 	border: 1px solid green;
 }
 
 #FooterRight {
 	float: right;
 	width: 399px;
-	height: 49px;
+	height: 50px;
 	border: 1px solid red;
 }
