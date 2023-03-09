@@ -16,6 +16,12 @@ DIV {
 	background: url(images/banner.png) no-repeat;
 }
 
+img {
+	width: 800px;
+	height: 100px;
+	object-fit: contain;
+}
+
 #MainContent {
 	max-width: 800px;
 	margin-right: auto;
