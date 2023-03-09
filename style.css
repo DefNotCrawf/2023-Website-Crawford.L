@@ -10,20 +10,20 @@ DIV {
 
 #Header {
 	height: 100px;
-	width: 800px;
+	max-width: 800px;
 	margin-right: auto;
 	margin-left: auto;
 	background: url(images/banner.png) no-repeat;
 }
 
 #MainContent {
-	width: 800px;
+	max-width: 800px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
 #Footer {
-	width: 802px;
+	max-width: 802px;
 	margin-right: auto;
 	margin-left: auto;
 	height: 50px
@@ -31,14 +31,14 @@ DIV {
 
 #FooterLeft {
 	float: left;
-	width: 49.5%;
+	width: 0.5vw;
 	height: 49px;
 	border: 1px solid green;
 }
 
 #FooterRight {
 	float: right;
-	width: 49.5%;
+	width: 0.5vw;
 	height: 49px;
 	border: 1px solid red;
 }
