@@ -31,20 +31,23 @@ DIV {
 
 #FooterLeft {
 	float: left;
-	width: 0.5vw;
+	width: 50vw;
 	height: 49px;
 	border: 1px solid green;
 }
 
 #FooterRight {
 	float: right;
-	width: 0.5vw;
+	width: 50vw;
 	height: 49px;
 	border: 1px solid red;
 }
 
 @media only screen and (max-width: 998px) {
-	#Footer, #MainContent, #Header {
-		width:100%;
+
+	#Footer,
+	#MainContent,
+	#Header {
+		width: 100%;
 	}
 }
