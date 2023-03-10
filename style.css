@@ -13,7 +13,7 @@ DIV {
 	max-width: 800px;
 	margin-right: auto;
 	margin-left: auto;
-	background: url(images/banner.png) no-repeat object-fit: contain;
+	background: url(images/banner.png) no-repeat, object-fit: contain;
 }
 
 #MainContent {
