@@ -13,7 +13,7 @@ DIV {
 	max-width: 800px;
 	margin-right: auto;
 	margin-left: auto;
-	background: url(images/banner.png) no-repeat, object-fit: contain;
+
 }
 
 #MainContent {
@@ -31,14 +31,14 @@ DIV {
 
 #FooterLeft {
 	float: left;
-	width: 49.5%;
+	width: 0.5vw;
 	height: 49px;
 	border: 1px solid green;
 }
 
 #FooterRight {
 	float: right;
-	width: 49.5%;
+	width: 0.5vw;
 	height: 49px;
 	border: 1px solid red;
 }
@@ -48,6 +48,47 @@ DIV {
 	#Footer,
 	#MainContent,
 	#Header {
+		width: 100%;
+	}
+}
+
+div.gallery {
+	border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
 		width: 100%;
 	}
 }
