@@ -13,7 +13,7 @@ DIV {
 	max-width: 800px;
 	margin-right: auto;
 	margin-left: auto;
-
+	background: url(images/banner.png) no-repeat;
 }
 
 #MainContent {
@@ -31,14 +31,14 @@ DIV {
 
 #FooterLeft {
 	float: left;
-	width: 0.5vw;
+	width: 49.5vw;
 	height: 49px;
 	border: 1px solid green;
 }
 
 #FooterRight {
 	float: right;
-	width: 0.5vw;
+	width: 49.5vw;
 	height: 49px;
 	border: 1px solid red;
 }
