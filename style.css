@@ -33,14 +33,14 @@ DIV {
 	float: left;
 	width: 49.5%;
 	height: 49px;
-	border: 1px solid rgb(0, 255, 0);
+	border: 1px solid rgba(0, 255, 0, 1);
 }
 
 #FooterRight {
 	float: right;
 	width: 49.5%;
 	height: 49px;
-	border: 1px solid rgb(255, 0, 0);
+	border: 1px solid rgba(255, 0, 0, 1);
 }
 
 @media only screen and (max-width: 998px) {
