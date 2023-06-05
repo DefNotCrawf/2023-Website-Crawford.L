@@ -1,12 +1,21 @@
 /* .css file for main page */
 .container {
-    border: 1px solid red;
+    border: 1px solid #f00;
 }
 
 .border {
-    border: 1px solid blue;
+    border: 1px solid #00f;
 }
 
 .navbar-brand img {
     height: 180px;
+}
+
+.sampleMarquee {
+    color: #000;
+    background-color: #ddd;
+    font-size: 34px;
+    line-height: 70px;
+    padding: 15px;
+    text-align: center;
 }

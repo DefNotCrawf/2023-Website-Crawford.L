@@ -1,1 +1,12 @@
-/* css file for A380 page */
+/* .css file for A380 page */
+.container {
+    border: 1px solid #f00;
+}
+
+.border {
+    border: 1px solid #00f;
+}
+
+.navbar-brand img {
+    height: 180px;
+}
