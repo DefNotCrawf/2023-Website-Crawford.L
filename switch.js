@@ -1,6 +1,8 @@
-/**
- *  Light Switch @version v0.1.4
+/** Light Switch
+ *  
+ * 	This relies on Bootstrap code.
  */
+
 
 (function () {
 	let lightSwitch = document.getElementById('lightSwitch');
