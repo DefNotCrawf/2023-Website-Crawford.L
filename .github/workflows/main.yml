@@ -1,17 +1,38 @@
-- name: Automatic Releases
-  # You may pin to the exact commit or the version.
-  # uses: marvinpinto/action-automatic-releases@919008cf3f741b179569b7a6fb4d8860689ab7f0
-  uses: marvinpinto/action-automatic-releases@v1.2.1
-  with:
-    # GitHub secret token
-    repo_token: 
-    # Git tag (for automatic releases)
-    automatic_release_tag: # optional
-    # Should this release be marked as a draft?
-    draft: # optional
-    # Should this release be marked as a pre-release?
-    prerelease: true # optional, default is true
-    # Release title (for automatic releases)
-    title: # optional
-    # Assets to upload to the release
-    files: *.css *.html *.png site.webmanifest *.js *.md LICENSE *.jpg *.ico # optional
+---
+name: "auto-release"
+
+on:
+  push:
+    paths:
+      - "SpamDomainsList.txt"
+      - "SpamThreadsList.txt"
+      - "SpamAccountsList.txt"
+
+jobs:
+  auto-release:
+    name: "Zip and Auto Release"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: set env
+        run: echo "NOW=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
+        
+      - name: "Build & test"
+        run: |
+          echo "done!"
+          
+      - uses: actions/checkout@v2
+      - uses: vimtor/action-zip@v1
+        with:
+          files: LICENSE *.html *.css *.js *.md * *.png *.jpg *.ico
+          recursive: false
+          dest: ${{ env.NOW }}.zip          
+
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "${{ env.NOW }}"
+          prerelease: true
+          title: "${{ env.NOW }}"
+          files: |
+            ${{ env.NOW }}.zip
